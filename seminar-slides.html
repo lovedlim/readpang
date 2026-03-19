@@ -1765,79 +1765,12 @@ AI Studio에서:
     </h3>
     <div style="background:rgba(255,255,255,0.15); border-radius:20px; padding:32px 48px; display:inline-block;">
       <p class="text-white" style="font-size:22px; line-height:2;">
-        🛠️ 개발 도구 선택 (2026)<br>
         📤 AI에게 PRD를 전달하는 4단계<br>
         💬 실전 대화록<br>
         🔑 비개발자의 생존 기술<br>
         ⚠️ 자주 하는 실수 & 해결법<br>
         🗺️ 서비스 개발 로드맵
       </p>
-    </div>
-  </div>
-</div>
-
-<!-- ═══════════════════════════════════════════════
-  슬라이드 25: 개발 도구 선택
-════════════════════════════════════════════════ -->
-<div class="slide bg-white">
-  <div>
-    <div class="tag tag-orange">11. 개발 도구 선택 (2026)</div>
-    <h2 class="text-dark mb-6">어떤 도구로 만들까</h2>
-    <table style="font-size:18px; margin-bottom:20px;">
-      <thead>
-        <tr><th>도구</th><th>특징</th><th>비용</th><th>추천도</th></tr>
-      </thead>
-      <tbody>
-        <tr class="td-highlight">
-          <td><strong>Stitch + AI Studio ⭐</strong></td>
-          <td>디자인→이미지 전달→코드, Build Mode 배포</td>
-          <td><span class="badge badge-green">무료</span></td>
-          <td>⭐⭐⭐⭐⭐</td>
-        </tr>
-        <tr class="td-highlight">
-          <td><strong>Google Antigravity</strong></td>
-          <td>에이전트 기반 IDE, Firebase 생태계 친화적</td>
-          <td>무료 시작</td>
-          <td>⭐⭐⭐⭐</td>
-        </tr>
-        <tr class="td-highlight">
-          <td><strong>Cursor</strong></td>
-          <td>VS Code 기반 AI IDE, 100만+ 사용자</td>
-          <td>$20/월</td>
-          <td>⭐⭐⭐⭐</td>
-        </tr>
-        <tr>
-          <td><strong>Lovable</strong></td>
-          <td>프롬프트 → 폴리시된 React 앱 즉시</td>
-          <td>무료 시작</td>
-          <td>⭐⭐</td>
-        </tr>
-        <tr>
-          <td><strong>Bolt.new</strong></td>
-          <td>브라우저에서 앱 생성, 빠른 프로토타입</td>
-          <td>무료 시작</td>
-          <td>⭐⭐</td>
-        </tr>
-        <tr>
-          <td><strong>Replit</strong></td>
-          <td>Agent 3: 자율 개발, 모바일 앱 지원</td>
-          <td>무료 시작</td>
-          <td>⭐⭐</td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="card-dark">
-      <h4 style="color:white; margin-bottom:12px; font-size:22px;">AI Studio Build Mode란? (게임 체인저)</h4>
-      <div class="grid-2" style="gap:16px;">
-        <div>
-          <p style="color:rgba(255,255,255,0.6); font-size:16px; margin-bottom:8px;">기존 방식</p>
-          <p style="color:rgba(255,255,255,0.8); font-size:18px; line-height:1.7;">AI Studio → 코드 복사 → 에디터에서 파일 생성 → npm start → 배포</p>
-        </div>
-        <div style="border-left:3px solid var(--orange); padding-left:16px;">
-          <p style="color:var(--orange); font-size:16px; font-weight:700; margin-bottom:8px;">Build Mode ✨</p>
-          <p style="color:rgba(255,255,255,0.9); font-size:18px; line-height:1.7;">프롬프트 입력 → 브라우저에서 자동 생성 → 미리보기 → 원클릭 배포</p>
-        </div>
-      </div>
     </div>
   </div>
 </div>
@@ -2042,63 +1975,6 @@ PRD: [붙여넣기]
 </div>
 
 <!-- ═══════════════════════════════════════════════
-  슬라이드 30: 자주 하는 실수
-════════════════════════════════════════════════ -->
-<div class="slide bg-white">
-  <div>
-    <div class="tag tag-orange">15. 자주 하는 실수 & 해결법</div>
-    <h2 class="text-dark mb-6">이것만 조심하면 된다</h2>
-    <table style="font-size:18px;">
-      <thead>
-        <tr><th style="width:30%;">실수</th><th style="width:30%;">결과</th><th style="width:40%;">해결</th></tr>
-      </thead>
-      <tbody>
-        <tr class="td-highlight">
-          <td><strong>PRD 없이 "만들어줘"</strong></td>
-          <td>AI가 엉뚱한 앱을 만듦</td>
-          <td>한 줄 정의만이라도 정확히</td>
-        </tr>
-        <tr>
-          <td><strong>한 번에 전부 요청</strong></td>
-          <td>꼬이면 전부 다시</td>
-          <td>Phase별, Step별로 나눠서</td>
-        </tr>
-        <tr class="td-highlight">
-          <td><strong>디자인 없이 시작</strong></td>
-          <td>수정에 시간 낭비</td>
-          <td>Stitch에서 먼저 디자인</td>
-        </tr>
-        <tr>
-          <td><strong>예외 처리 나중에</strong></td>
-          <td>기존 코드와 충돌</td>
-          <td>Phase 3에서 한번에</td>
-        </tr>
-        <tr class="td-highlight">
-          <td><strong>상태 미고려</strong></td>
-          <td>기간 종료 후에도 제출 가능</td>
-          <td>Phase 4에서 반드시 처리</td>
-        </tr>
-        <tr>
-          <td><strong>에러를 자기 말로 설명</strong></td>
-          <td>AI가 엉뚱한 걸 고침</td>
-          <td>에러 메시지 그대로 복사</td>
-        </tr>
-        <tr class="td-highlight">
-          <td><strong>저장 정보 누락</strong></td>
-          <td>벌금 데이터 없음</td>
-          <td>PRD 9번 꼼꼼히 작성</td>
-        </tr>
-        <tr>
-          <td><strong>AI 코드 맹신</strong></td>
-          <td>실수를 못 발견</td>
-          <td>매 Step 테스트 체크리스트</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<!-- ═══════════════════════════════════════════════
   슬라이드 33: 정리 로드맵
 ════════════════════════════════════════════════ -->
 <div class="slide bg-cream">
@@ -2178,38 +2054,34 @@ PRD: [붙여넣기]
     <h2 class="text-dark mb-8">직접 해보세요</h2>
     <div class="grid-3">
       <div class="card-orange" style="text-align:center;">
-        <div class="emoji-big">🎨</div>
-        <div class="badge" style="background:rgba(255,255,255,0.3); color:white; margin-bottom:16px;">과제 1</div>
-        <h4 style="color:white; margin-bottom:12px;">Stitch에서<br>"읽고팡" 5개 화면 디자인</h4>
-        <p style="font-size:18px; color:rgba(255,255,255,0.85); line-height:1.7;">프롬프트 예시 참고해서 로그인 / 홈 / 모임 만들기 / 참여 / 진행 현황 디자인</p>
+        <div class="emoji-big">📋</div>
+        <div class="badge" style="background:rgba(255,255,255,0.3); color:white; margin-bottom:16px;">Step 1</div>
+        <h4 style="color:white; margin-bottom:12px;">계획<br>PRD 작성</h4>
+        <p style="font-size:18px; color:rgba(255,255,255,0.85); line-height:1.7;">내가 만들고 싶은 서비스의 문제를 정의하고 10단계 프레임워크로 PRD 초안 작성</p>
       </div>
       <div class="card" style="text-align:center; border:3px solid var(--orange);">
-        <div class="emoji-big">🚀</div>
-        <div class="badge badge-orange" style="margin-bottom:16px;">과제 2</div>
-        <h4 style="color:var(--dark); margin-bottom:12px;">Stitch → AI Studio<br>→ PRD와 함께 Phase 1 시작</h4>
-        <p style="font-size:18px; color:var(--gray); line-height:1.7;">이미지 전달 후 PRD 붙여넣고 AI에게 질문 받아보기</p>
+        <div class="emoji-big">🎨</div>
+        <div class="badge badge-orange" style="margin-bottom:16px;">Step 2</div>
+        <h4 style="color:var(--dark); margin-bottom:12px;">디자인<br>만들기</h4>
+        <p style="font-size:18px; color:var(--gray); line-height:1.7;">Google Stitch에서 서비스 화면 프롬프트 작성 → AI 디자인 생성 → 이미지 전달</p>
       </div>
       <div class="card" style="text-align:center;">
-        <div class="emoji-big">💡</div>
-        <div class="badge" style="background:var(--dark); color:white; margin-bottom:16px;">과제 3</div>
-        <h4 style="color:var(--dark); margin-bottom:12px;">나만의 서비스<br>아이디어 → PRD → 개발</h4>
-        <p style="font-size:18px; color:var(--gray); line-height:1.7;">복잡도 체크리스트 확인 → 10단계 프레임워크 적용 → Stitch 디자인 → 개발</p>
+        <div class="emoji-big">🚀</div>
+        <div class="badge" style="background:var(--dark); color:white; margin-bottom:16px;">Step 3</div>
+        <h4 style="color:var(--dark); margin-bottom:12px;">바이브 코딩</h4>
+        <p style="font-size:18px; color:var(--gray); line-height:1.7;">AI Studio에 디자인 + PRD 전달 → Phase 1부터 단계별로 개발 시작</p>
       </div>
     </div>
 
     <div class="highlight-box" style="margin-top:32px;">
-      <div class="grid-3" style="gap:0; text-align:center;">
+      <div class="grid-2" style="gap:0; text-align:center;">
         <div>
           <p style="font-size:22px; font-weight:700; color:var(--dark);">Google Stitch</p>
           <p style="font-size:18px; color:var(--gray);">stitch.withgoogle.com</p>
         </div>
-        <div style="border-left:2px solid var(--orange-mid); border-right:2px solid var(--orange-mid);">
+        <div style="border-left:2px solid var(--orange-mid);">
           <p style="font-size:22px; font-weight:700; color:var(--dark);">Google AI Studio</p>
           <p style="font-size:18px; color:var(--gray);">aistudio.google.com</p>
-        </div>
-        <div>
-          <p style="font-size:22px; font-weight:700; color:var(--dark);">Google Antigravity</p>
-          <p style="font-size:18px; color:var(--gray);">antigravityide.org</p>
         </div>
       </div>
     </div>
@@ -2887,13 +2759,11 @@ Step 5: 오늘 읽은 장 수 제출
     '📱 읽고팡 화면 프롬프트',             // 23
     '🔗 Stitch → AI Studio 워크플로우',  // 24
     '📌 PART 3: 실전편',                  // 25
-    '🛠️ 어떤 도구로 만들까',             // 26
-    '📤 PRD 전달 4단계',                  // 27
+    '📤 PRD 전달 4단계',                  // 26
     '💬 실전 대화록',                     // 28
     '🔑 생존 기술 1~3',                   // 29
     '💬 생존 기술 4~5 (질문법·화면수정)', // 30
-    '❌ 자주 하는 실수',                  // 31
-    '🗺️ 서비스 개발 로드맵',             // 32
+    '🗺️ 서비스 개발 로드맵',             // 31
     '📝 실습 과제',                       // 33
     '📖 저서 소개: 바이브 코딩 with 커서', // 34
     '🎉 마무리',                          // 35
