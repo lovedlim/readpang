@@ -421,35 +421,44 @@
   슬라이드 1: 타이틀
 ════════════════════════════════════════════════ -->
 <div class="slide bg-dark active">
-  <div>
-    <div class="tag tag-orange" style="font-size:16px;">비전공자를 위한 바이브 코딩</div>
-    <h1 class="text-white" style="font-size:68px; margin-bottom:32px; line-height:1.15;">
-      바이브 코딩으로<br>
-      <span class="text-orange">복잡한 서비스</span><br>만들기
-    </h1>
-    <div class="orange-line"></div>
-    <p class="text-white" style="font-size:28px; opacity:0.85; margin-bottom:48px;">
-      유저플로우 중심 PRD로 계획하고 AI로 완성하기
-    </p>
-    <div class="quote" style="background:rgba(255,107,53,0.15); border-left-color:#FF6B35; max-width:700px;">
-      <p style="color:white; font-size:26px; font-style:italic;">
-        "코드를 몰라도 된다.<br>대신, 사용자가 뭘 하는지는 <strong style="color:#FF6B35;">정확히</strong> 알아야 한다."
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:stretch; width:100%; min-height:70vh;">
+
+    <!-- 좌측: 타이틀 -->
+    <div style="display:flex; flex-direction:column; justify-content:center;">
+      <div class="tag tag-orange" style="font-size:16px; margin-bottom:32px; align-self:flex-start;">비전공자를 위한 바이브 코딩 <span style="font-size:12px; opacity:0.75; font-weight:600; margin-left:8px; background:rgba(255,255,255,0.12); padding:2px 8px; border-radius:10px;">v1.2</span></div>
+      <h1 class="text-white" style="font-size:62px; margin-bottom:24px; line-height:1.15;">
+        바이브 코딩으로<br>
+        <span class="text-orange">복잡한 서비스</span><br>만들기
+      </h1>
+      <div class="orange-line"></div>
+      <p class="text-white" style="font-size:24px; opacity:0.85;">
+        유저플로우 중심 PRD로 계획하고 AI로 완성하기
       </p>
     </div>
-    <div style="margin-top:40px; display:flex; align-items:center; justify-content:space-between; max-width:700px;">
-      <p style="color:rgba(255,255,255,0.5); font-size:18px;">실습 프로젝트: 독서 모임 벌금 관리 서비스 "읽고팡"</p>
-      <button onclick="openProfile()" style="
-        display:inline-flex; align-items:center; gap:8px;
-        padding:10px 20px; background:rgba(255,255,255,0.1);
-        border:1px solid rgba(255,255,255,0.25); border-radius:30px;
-        color:rgba(255,255,255,0.7); font-size:15px; font-weight:600;
-        cursor:pointer; font-family:inherit; transition:all 0.2s;
-        white-space:nowrap;
-      " onmouseover="this.style.background='rgba(255,255,255,0.18)'; this.style.color='white';"
-         onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.color='rgba(255,255,255,0.7)';">
-        👤 강사 소개
-      </button>
+
+    <!-- 우측: 인용구 + 부가 정보 -->
+    <div style="display:flex; flex-direction:column; justify-content:center; gap:28px;">
+      <div class="quote" style="background:rgba(255,107,53,0.15); border-left-color:#FF6B35;">
+        <p style="color:white; font-size:24px; font-style:italic; line-height:1.8;">
+          "코드를 몰라도 된다.<br>대신, 사용자가 뭘 하는지는<br><strong style="color:#FF6B35;">정확히</strong> 알아야 한다."
+        </p>
+      </div>
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:16px;">
+        <p style="color:rgba(255,255,255,0.5); font-size:17px;">실습 프로젝트: 독서 모임 벌금 관리 서비스 "읽고팡"</p>
+        <button onclick="openProfile()" style="
+          display:inline-flex; align-items:center; gap:8px;
+          padding:10px 20px; background:rgba(255,255,255,0.1);
+          border:1px solid rgba(255,255,255,0.25); border-radius:30px;
+          color:rgba(255,255,255,0.7); font-size:15px; font-weight:600;
+          cursor:pointer; font-family:inherit; transition:all 0.2s;
+          white-space:nowrap; flex-shrink:0;
+        " onmouseover="this.style.background='rgba(255,255,255,0.18)'; this.style.color='white';"
+           onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.color='rgba(255,255,255,0.7)';">
+          👤 강사 소개
+        </button>
+      </div>
     </div>
+
   </div>
 </div>
 
@@ -1780,8 +1789,8 @@ AI Studio에서:
 ════════════════════════════════════════════════ -->
 <div class="slide bg-cream">
   <div>
-    <div class="tag tag-orange">12. AI에게 PRD를 전달하는 4단계</div>
-    <h2 class="text-dark mb-6">왜 나눠서 전달하는가</h2>
+    <div class="tag tag-orange">12. AI에게 PRD를 전달하는 방법</div>
+    <h2 class="text-dark mb-6">한 번에 전달하지 말고, 화면 단위로 나눠서</h2>
 
     <div class="grid-2" style="gap:20px; margin-bottom:28px;">
       <div class="vs-card vs-bad">
@@ -1789,8 +1798,8 @@ AI Studio에서:
         <p style="font-size:20px; color:#FCA5A5;">PRD + 디자인 + "전부 만들어줘"<br>→ 중간에 꼬이면 전부 다시</p>
       </div>
       <div class="vs-card vs-good">
-        <div class="vs-label">✅ Phase별 전달</div>
-        <p style="font-size:20px; color:#6EE7B7;">Phase별 전달 → 확인 → 다음<br>→ 문제 시 그 단계만 수정</p>
+        <div class="vs-label">✅ 화면 단위로 전달</div>
+        <p style="font-size:20px; color:#6EE7B7;">화면 하나씩 → 테스트 → 다음 화면<br>→ 문제 시 그 화면만 수정</p>
       </div>
     </div>
 
@@ -1798,30 +1807,83 @@ AI Studio에서:
       <div class="card" style="border-left:6px solid var(--orange);">
         <div style="display:flex; align-items:center; gap:16px; margin-bottom:12px;">
           <div class="step-num" style="width:48px; height:48px; font-size:20px;">1</div>
-          <h4 style="font-size:22px; color:var(--dark);">뼈대 세우기</h4>
+          <h4 style="font-size:22px; color:var(--dark);">PRD + 디자인 전달</h4>
         </div>
-        <p style="font-size:19px; color:var(--gray);">프로젝트 세팅 + 데이터 구조<br><span style="font-size:16px; color:var(--orange);">아직 화면은 만들지 않는다</span></p>
+        <p style="font-size:19px; color:var(--gray);">PRD 붙여넣기 + Stitch 이미지 전달<br><span style="font-size:16px; color:var(--orange);">Phase 계획만 먼저 요청, 코드 X</span></p>
       </div>
       <div class="card" style="border-left:6px solid var(--blue);">
         <div style="display:flex; align-items:center; gap:16px; margin-bottom:12px;">
           <div class="step-num" style="width:48px; height:48px; font-size:20px; background:var(--blue);">2</div>
-          <h4 style="font-size:22px; color:var(--dark);">한 화면씩 만들기</h4>
+          <h4 style="font-size:22px; color:var(--dark);">Phase 1부터 시작</h4>
         </div>
-        <p style="font-size:19px; color:var(--gray);">유저플로우 Step별 화면 구현<br><span style="font-size:16px; color:var(--blue);">매 Step마다 테스트 체크리스트</span></p>
+        <p style="font-size:19px; color:var(--gray);">첫 번째 화면(로그인)부터 만들기<br><span style="font-size:16px; color:var(--blue);">만들고 → 테스트 → 다음 Phase</span></p>
       </div>
       <div class="card" style="border-left:6px solid #F59E0B;">
         <div style="display:flex; align-items:center; gap:16px; margin-bottom:12px;">
           <div class="step-num" style="width:48px; height:48px; font-size:20px; background:#F59E0B;">3</div>
-          <h4 style="font-size:22px; color:var(--dark);">잘못된 입력 대비</h4>
+          <h4 style="font-size:22px; color:var(--dark);">목업 → 실제 연결</h4>
         </div>
-        <p style="font-size:19px; color:var(--gray);">예외 처리<br><span style="font-size:16px; color:#F59E0B;">PRD 8번 예외 상황 전달</span></p>
+        <p style="font-size:19px; color:var(--gray);">처음엔 가짜 데이터로 화면 완성<br><span style="font-size:16px; color:#F59E0B;">마지막 Phase에 Firebase 실제 연결</span></p>
       </div>
       <div class="card" style="border-left:6px solid var(--green);">
         <div style="display:flex; align-items:center; gap:16px; margin-bottom:12px;">
           <div class="step-num" style="width:48px; height:48px; font-size:20px; background:var(--green);">4</div>
-          <h4 style="font-size:22px; color:var(--dark);">상황별로 다르게</h4>
+          <h4 style="font-size:22px; color:var(--dark);">대화가 길어지면</h4>
         </div>
-        <p style="font-size:19px; color:var(--gray);">상태별 화면 분기<br><span style="font-size:16px; color:var(--green);">PRD 7번 상태 변화 전달</span></p>
+        <p style="font-size:19px; color:var(--gray);">새 세션 시작 + 맥락 붙여넣기<br><span style="font-size:16px; color:var(--green);">진행 상황 + 정한 규칙 요약 전달</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+  슬라이드 26b: Phase 계획 요청
+════════════════════════════════════════════════ -->
+<div class="slide bg-white">
+  <div>
+    <div class="tag tag-orange">12. AI에게 PRD를 전달하는 4단계</div>
+    <h2 class="text-dark mb-6">PRD 전달 후 → Phase 계획 요청</h2>
+
+    <div class="grid-2" style="gap:24px;">
+      <div>
+        <h4 style="color:var(--dark); margin-bottom:12px; font-size:22px;">그대로 붙여넣을 프롬프트</h4>
+        <div class="code-box" style="font-size:16px; line-height:1.9; margin-bottom:16px;">위 PRD를 읽고 개발 계획을 Phase로 나눠줘.
+지금은 코드를 작성하지 말고, 계획만 제안해줘.
+각 Phase마다 아래 형식으로 정리해줘:
+
+- Phase 번호 및 이름
+- 작업할 파일 목록
+- 구현할 기능 (체크리스트)
+- 구현하지 않을 것
+
+실제 DB 연결과 실제 로그인은 가장 마지막
+Phase에 해주고, 그 전까지는 목업으로 만들어줘.</div>
+
+        <div style="padding:14px 18px; background:var(--orange-light); border-radius:10px;">
+          <p style="font-size:18px; color:var(--orange); font-weight:600;">💡 목업 먼저 → 화면과 흐름 확인 후<br>마지막에 실제 DB·로그인 연결</p>
+        </div>
+      </div>
+
+      <div>
+        <h4 style="color:var(--dark); margin-bottom:12px; font-size:22px;">AI가 대답하면</h4>
+        <div class="code-box" style="font-size:16px; line-height:1.9; margin-bottom:16px;">AI: "Phase 1부터 시작할까요?
+     기본 레이아웃 설정부터 진행하겠습니다."
+
+나: "응, 1단계만 개발하고
+    내가 테스트한 뒤 2단계 시작 알려줄게"</div>
+
+        <h4 style="color:var(--dark); margin-bottom:12px; font-size:22px;">이 대화가 중요한 이유</h4>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div style="padding:14px 18px; background:#F0FDF4; border-left:4px solid var(--green); border-radius:0 10px 10px 0;">
+            <p style="font-size:18px; color:var(--dark); line-height:1.7;">✅ Phase 단위로 끊어야 코드가 꼬이지 않는다</p>
+          </div>
+          <div style="padding:14px 18px; background:#F0FDF4; border-left:4px solid var(--green); border-radius:0 10px 10px 0;">
+            <p style="font-size:18px; color:var(--dark); line-height:1.7;">✅ 내가 테스트한 뒤 다음 Phase — 이게 PRD를 쓰는 이유</p>
+          </div>
+          <div style="padding:14px 18px; background:#FEF2F2; border-left:4px solid #EF4444; border-radius:0 10px 10px 0;">
+            <p style="font-size:18px; color:var(--dark); line-height:1.7;">❌ "전부 다 만들어줘" → 꼬이면 처음부터</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -2570,7 +2632,7 @@ vercel --prod
           <img src="book-bigdata.png" style="width:60px; border-radius:6px; flex-shrink:0; box-shadow:0 4px 12px rgba(0,0,0,0.4);" alt="빅데이터 분석기사">
           <div>
             <p style="color:white; font-size:15px; font-weight:700; margin-bottom:4px;">2026 시나공 빅데이터 분석기사 실기</p>
-            <p style="color:rgba(255,255,255,0.5); font-size:13px;">길벗 · 2026년 (3판 예정)</p>
+            <p style="color:rgba(255,255,255,0.5); font-size:13px;">길벗 · 2026년 3월 (3차 개정판)</p>
           </div>
         </div>
 
@@ -2760,6 +2822,7 @@ Step 5: 오늘 읽은 장 수 제출
     '🔗 Stitch → AI Studio 워크플로우',  // 24
     '📌 PART 3: 실전편',                  // 25
     '📤 PRD 전달 4단계',                  // 26
+    '🗂️ Phase 계획 요청 & 대화 흐름',    // 27
     '💬 실전 대화록',                     // 28
     '🔑 생존 기술 1~3',                   // 29
     '💬 생존 기술 4~5 (질문법·화면수정)', // 30
